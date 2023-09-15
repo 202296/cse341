@@ -3,7 +3,7 @@ const namesControllers = require('../controllers/fonction');
 
 routes.get('/', namesControllers.arthuRoute);
 routes.get('/kevin', namesControllers.kevinRoute);
-routes.get('/regist', namesControllers.registRoute);
+routes.get('/regis', namesControllers.registRoute);
 routes.get('/fredi', namesControllers.frediRoute);
 routes.get('/chico', namesControllers.tapeRoute);
 

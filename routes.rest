@@ -2,11 +2,67 @@
 ###
 GET http://localhost:8080/contacts/
 ###
-GET http://localhost:8080/contacts/650d2adaff269476fd764460
+GET http://localhost:8080/contacts/650dbb153b956e56fe9ebf45
 ###
-GET http://localhost:8080/contacts/650d2b7aff269476fd764463
+GET http://localhost:8080/contacts/650dbcc83b956e56fe9ebf4c
 ###
-GET http://localhost:8080/contacts/650d4536edc26410d5ec45d5
+GET http://localhost:8080/contacts/650dbd933b956e56fe9ebf50
+###
+POST http://localhost:8080/contacts/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Charly",
+    "lastname": "Taper",
+    "email": "charlepe92@gmail.com",
+    "favoriteColor": "white",
+    "birthday": "01 january 1990"
+}
+###
+PUT http://localhost:8080/contacts/650dcc313b956e56fe9ebf83 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Charle",
+    "lastname": "Tape",
+    "email": "charletape92@gmail.com",
+    "favoriteColor": "white",
+    "birthday": "01 january 1992"
+}
+###
+DELETE http://localhost:8080/contacts/650dcc313b956e56fe9ebf83 HTTP/1.1
+
 
 // PRODUCTION Deploy
+### 
+GET https://cse341-assignment.onrender.com/contacts/ 
+### 
+GET https://cse341-assignment.onrender.com/contacts/650dbb153b956e56fe9ebf45 
+### 
+GET https://cse341-assignment.onrender.com/contacts/650dbcc83b956e56fe9ebf4c 
+### 
+GET https://cse341-assignment.onrender.com/contacts/650dbd933b956e56fe9ebf50
 ###
+POST https://cse341-assignment.onrender.com/contacts/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Charly",
+    "lastname": "Taper",
+    "email": "charlepe92@gmail.com",
+    "favoriteColor": "white",
+    "birthday": "01 january 1990"
+}
+###
+PUT http://localhost:8080/contacts/650dc89f34eb92dc4789e1aa HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Charle",
+    "lastname": "Tape",
+    "email": "charletape92@gmail.com",
+    "favoriteColor": "white",
+    "birthday": "01 january 1992"
+} 
+###
+DELETE https://cse341-assignment.onrender.com/contacts/650dcc313b956e56fe9ebf83 HTTP/1.1

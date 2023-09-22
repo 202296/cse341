@@ -19,7 +19,7 @@ Content-Type: application/json
     "birthday": "01 january 1990"
 }
 ###
-PUT http://localhost:8080/contacts/650dcc313b956e56fe9ebf83 HTTP/1.1
+PUT http://localhost:8080/contacts/650de06bdff49c24a5d2dc4f HTTP/1.1
 Content-Type: application/json
 
 {
@@ -30,7 +30,7 @@ Content-Type: application/json
     "birthday": "01 january 1992"
 }
 ###
-DELETE http://localhost:8080/contacts/650dcc313b956e56fe9ebf83 HTTP/1.1
+DELETE http://localhost:8080/contacts/650de5808c901036e80a2b83 HTTP/1.1
 
 
 // PRODUCTION Deploy

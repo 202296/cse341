@@ -3,10 +3,10 @@ const Contact = require('../models/contact');
 // Create a new Contact
 const createContact = async(req, res) => {
     const email = req.body.email;
-    const findUser = await Contact.findOne({email: email});
-    if (!findUser) {
-        const newUser = await Contact.create(req.body);
-        res.json(newUser)
+    const findContact = await Contact.findOne({email: email});
+    if (!findContact) {
+        const newContact = await Contact.create(req.body);
+        res.status(201).json({ acknowledged:true, insertedId: newContact.id });
     } else {
         throw new Error('Contact Already Exists');
     }
@@ -50,7 +50,7 @@ const UpdateContact = async (req, res) => {
         throw new Error('Contact not found');
     }
 
-    res.json(updateContact);
+    res.status(204).json(updateContact);
   } catch (error) {
     throw new Error(error);
 }
@@ -68,7 +68,7 @@ const deleteContact = async (req, res) => {
         throw new Error('Contact not found');
     }
 
-    res.json({ message: "Contact deleted successfully" });
+    res.status(200).json({ message: "Contact deleted successfully" });
   } catch (error) {
     throw new Error(error);
 }

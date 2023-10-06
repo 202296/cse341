@@ -2,11 +2,13 @@
 ###
 GET http://localhost:8080/contacts/
 ###
-GET http://localhost:8080/contacts/650dbb153b956e56fe9ebf45
+# GET http://localhost:8080/api-docs
 ###
-GET http://localhost:8080/contacts/650dbcc83b956e56fe9ebf4c
+GET http://localhost:8080/contacts/65175af614272b3657718403
 ###
-GET http://localhost:8080/contacts/650dbd933b956e56fe9ebf50
+GET http://localhost:8080/contacts/650e86c6c1899b09f5cd736e
+###
+GET http://localhost:8080/contacts/650e86e022cb1cac559cd241
 ###
 POST http://localhost:8080/contacts/create HTTP/1.1
 Content-Type: application/json
@@ -15,11 +17,11 @@ Content-Type: application/json
     "firstname": "Charly",
     "lastname": "Taper",
     "email": "charlepe92@gmail.com",
-    "favoriteColor": "white",
+    "favoriteColor": "yellow",
     "birthday": "01 january 1990"
 }
 ###
-PUT http://localhost:8080/contacts/650de06bdff49c24a5d2dc4f HTTP/1.1
+PUT http://localhost:8080/contacts/65175af614272b3657718403 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -30,39 +32,39 @@ Content-Type: application/json
     "birthday": "01 january 1992"
 }
 ###
-DELETE http://localhost:8080/contacts/650de5808c901036e80a2b83 HTTP/1.1
+DELETE http://localhost:8080/contacts/65175af614272b3657718403 HTTP/1.1
 
 
 // PRODUCTION Deploy
 ### 
 GET https://cse341-assignment.onrender.com/contacts/ 
 ### 
-GET https://cse341-assignment.onrender.com/contacts/650dbb153b956e56fe9ebf45 
+GET https://cse341-assignment.onrender.com/contacts/65175b8571e0b676bc60e969 
 ### 
-GET https://cse341-assignment.onrender.com/contacts/650dbcc83b956e56fe9ebf4c 
+GET https://cse341-assignment.onrender.com/contacts/650e86c6c1899b09f5cd736e 
 ### 
-GET https://cse341-assignment.onrender.com/contacts/650dbd933b956e56fe9ebf50
+GET https://cse341-assignment.onrender.com/contacts/650e86e022cb1cac559cd241
 ###
 POST https://cse341-assignment.onrender.com/contacts/create HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstname": "Charly",
-    "lastname": "Taper",
-    "email": "charlepe92@gmail.com",
-    "favoriteColor": "white",
-    "birthday": "01 january 1990"
+    "firstname": "Arthur Kouadio",
+    "lastname": "Koko",
+    "email": "sidney2@gmail.com",
+    "favoriteColor": "black",
+    "birthday": "07 jun 2001"
 }
 ###
-PUT http://localhost:8080/contacts/650dc89f34eb92dc4789e1aa HTTP/1.1
+PUT http://localhost:8080/contacts/65175b8571e0b676bc60e969 HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstname": "Charle",
-    "lastname": "Tape",
-    "email": "charletape92@gmail.com",
-    "favoriteColor": "white",
-    "birthday": "01 january 1992"
+    "firstname": "Arthur Kouadio Sidney",
+    "lastname": "Koko",
+    "email": "sidney02@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "07 mai 2001"
 } 
 ###
-DELETE https://cse341-assignment.onrender.com/contacts/650dcc313b956e56fe9ebf83 HTTP/1.1
+DELETE https://cse341-assignment.onrender.com/contacts/65175b8571e0b676bc60e969 HTTP/1.1
